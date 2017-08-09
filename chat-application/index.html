@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.IO chat</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="//cdn.bootcss.com/socket.io/2.0.3/socket.io.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <ul id="message"></ul>
+  <div class="typing"></div>
+  <div class="online-box">
+    <h4>Online</h4>
+    <ul class="online"></ul>
+  </div>
+  <form>
+    <input id="m" autocomplete="off">
+    <input type="submit" value="Send">  
+  </form>
+  <script src="./client.js"></script>
+</body>
+</html>

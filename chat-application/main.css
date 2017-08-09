@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 13px Helvetica, Arial;
+}
+.self:nth-child(2n+1) {
+  background-color: #6c6 !important;
+}
+.self:nth-child(2n) {
+  background-color: #F3BF0B !important;
+}
+.typing {
+  position: fixed;
+  top: 6px;
+  right: 30px;
+  display: none;
+}
+.online-box {
+  width: 100px;
+  height: 160px;
+  overflow: auto;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #cfc;
+}
+.online {
+  list-style-type: none;
+}
+form {
+  background: #000;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+form input {
+  border: 0;
+  padding: 10px;
+  width: 90%;
+  margin-right: .5%; 
+}
+form input[type="submit"] {
+  width: 9%;
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px;
+  float: right;
+}
+#message {
+  list-style-type: none;
+  margin: 0 0 50px;
+  padding: 0;
+  border-bottom: 1px solid #000;
+}
+#message li {
+  padding: 5px 10px;
+}
+#message li:nth-child(odd) {
+  background-color: #eee;
+}
