@@ -47,7 +47,7 @@ form input {
 }
 form input[type="submit"] {
   width: 9%;
-  background: rgb(130, 224, 255);
+  background: #82E0FF;
   border: none;
   padding: 10px;
   float: right;

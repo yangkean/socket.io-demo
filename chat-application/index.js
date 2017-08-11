@@ -3,7 +3,7 @@ const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname)); // 设置静态资源目录
 
 app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/index.html`);
@@ -23,6 +23,7 @@ io.on('connection', (socket) => {
 
     socket.broadcast.emit('user connect', socket.nickname);
 
+    // 定时检查当前在线人员
     const timer = setInterval(() => {
       if(socket.online) {
         io.emit('user online', socket.nickname);
